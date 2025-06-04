@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ShadowAI Consent</title>
+<style>
+body { background: rgba(50,50,50,0.8); color: white; font-family: sans-serif; text-align: center; }
+button { margin-top: 20px; padding: 10px; }
+</style>
+</head>
+<body>
+<h2>ShadowAI requires your consent</h2>
+<p>This application records your input locally to automate tasks. Data never leaves your device.</p>
+<button id="agree">I Agree</button>
+<script>
+document.getElementById('agree').addEventListener('click', () => {
+  window.shadow.acceptConsent();
+});
+</script>
+</body>
+</html>
