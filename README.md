@@ -1,25 +1,25 @@
 # ShadowAI
 
-Master your workflow with real-time automation and AI mimicry.
+ShadowAI streamlines your workflow through real-time automation and intelligent prediction.
 
 ## Features
 
-- **Real-time input tracking**: Observes keyboard and mouse activity to build an accurate map of your actions.
-- **AI mimicry and prediction**: Learns how you work and anticipates your next steps with intelligent suggestions.
-- **Pattern-based learning**: Analyzes recurring sequences to refine future predictions and streamline repetitive tasks.
-- **Autonomous simulation mode**: Executes full workflows on your behalf while you supervise the results.
+- **Real-time input tracking**: Monitors keyboard and mouse activity to capture a precise representation of your actions.
+- **AI mimicry and prediction**: Learns from your actions to provide accurate, context-aware suggestions.
+- **Pattern-based learning**: Analyzes recurring sequences to refine predictions and streamline repetitive tasks.
+- **Autonomous simulation mode**: Executes complete workflows under your supervision.
 
 ## Modes
 
-- **MIMIC Mode**: Duplicates your actions immediately as you perform them, providing live assistance.
-- **TRAIN Mode**: Records input data and updates the model to improve future mimicry and prediction.
-- **I AM YOU Mode**: Runs ShadowAI autonomously, carrying out tasks and decisions based on your established patterns.
+- **MIMIC Mode**: Mirrors your actions in real time, offering immediate assistance.
+- **TRAIN Mode**: Records input data and updates the model to enhance future mimicry and prediction.
+- **I AM YOU Mode**: Operates autonomously, executing tasks and decisions derived from your established patterns.
 
 ## Usage
 
 1. Download the latest release for your platform and run the `shadowai` executable or Python script.
-2. ShadowAI starts in MIMIC Mode by default. Switch modes from the command line or system tray menu.
-3. Press the configured hotkey to pause tracking or choose "Exit" from the menu to close the assistant.
+2. ShadowAI starts in MIMIC Mode by default; switch modes from the command line or system tray menu as needed.
+3. Use the configured hotkey to pause tracking or select "Exit" from the menu to close the assistant.
 
 ## Performance & Tech Stack
 
