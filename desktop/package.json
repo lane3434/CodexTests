@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron --no-sandbox .",
+    "start": "xvfb-run -a electron --no-sandbox .",
     "pack": "electron-packager . ShadowDesktop --platform=win32 --arch=x64 --out=dist --overwrite"
   },
   "keywords": [],

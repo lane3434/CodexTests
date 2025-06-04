@@ -13,9 +13,11 @@ npm install
 ```
 npm start
 ```
+Requires `xvfb` when no display server is available.
 
 ## Package for Windows
 
 ```
 npm run pack
 ```
+Wine must be installed for Windows packaging.
