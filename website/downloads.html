@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowAI Downloads</title>
+    <script>tailwind={config:{darkMode:'class'}};</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 bg-animated flex flex-col min-h-screen">
+    <header class="bg-white dark:bg-gray-800 dark:text-gray-100 shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-xl font-bold">ShadowAI</div>
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+                <a href="features.html" class="hover:text-blue-600 dark:hover:text-blue-400">Features</a>
+                <a href="modes.html" class="hover:text-blue-600 dark:hover:text-blue-400">Modes</a>
+                <a href="downloads.html" class="text-blue-600 dark:text-blue-400 font-semibold">Downloads</a>
+                <a href="contact.html" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+                <button id="themeToggle" class="px-3 py-1 rounded bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200">Toggle Theme</button>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow container mx-auto p-8">
+        <h1 class="text-3xl font-extrabold mb-6 text-center glow">Download ShadowAI</h1>
+        <div class="text-center space-y-4 mb-8">
+            <a href="ShadowAI-Windows.exe" class="bg-blue-600 text-white px-8 py-3 rounded btn">ShadowAI-Windows.exe</a>
+            <a href="ShadowAI-Linux.bin" class="bg-green-600 text-white px-8 py-3 rounded btn">ShadowAI-Linux.bin</a>
+        </div>
+        <div class="mb-8 p-6 bg-white rounded shadow card-glow">
+            <h2 class="text-xl font-bold mb-2">System Requirements</h2>
+            <ul class="list-disc list-inside">
+                <li>64-bit Windows 10 or Ubuntu 22.04</li>
+                <li>Quad-core CPU</li>
+                <li>8 GB RAM</li>
+                <li>100 MB disk space</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-white rounded shadow card-glow">
+            <h2 class="text-xl font-bold mb-2">SHA256 Verification</h2>
+            <p>Windows: <code>6e2f3a9e2c5d4a8f1bcf4b2e70c457b690f7f9c4a27f58fd0b1d6c23fa5777b9</code></p>
+            <p>Linux: <code>3b1c2e754cf3a1d2ac7615d1f0a2a71b5e487c9fabe1d094b6f9713f234dc2fd</code></p>
+        </div>
+    </main>
+    <footer class="bg-gray-100 dark:bg-gray-800 text-center p-4">
+        <p>Released under the MIT License. View on <a href="https://github.com/shadowai/dev" class="text-blue-600 dark:text-blue-400">GitHub</a>.</p>
+    </footer>
+    <script src="theme.js"></script>
+</body>
+</html>
