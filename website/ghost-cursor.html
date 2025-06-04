@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Cursor - ShadowAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900 min-h-screen transition-colors duration-300">
+    <!-- Floating Particles Background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-700/50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-ghost text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">ShadowAI</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Home</a>
+                    <a href="features.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Features</a>
+                    <a href="modes.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Modes</a>
+                    <a href="downloads.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Downloads</a>
+                    <a href="contact.html" class="nav-link text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                
+                <button class="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Home</a>
+                    <a href="features.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Features</a>
+                    <a href="modes.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Modes</a>
+                    <a href="downloads.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Downloads</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    <button onclick="toggleTheme()" class="text-left text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                        <i class="fas fa-moon dark:hidden mr-2"></i>
+                        <i class="fas fa-sun hidden dark:inline mr-2"></i>
+                        Toggle Theme
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-3xl flex items-center justify-center mx-auto mb-8 animate-float">
+                        <i class="fas fa-mouse-pointer text-white text-4xl"></i>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        <span class="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent animate-gradient">Ghost Cursor</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        Experience the future of mouse interaction with predictive click paths that overlay your cursor in real-time
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-20 bg-white/50 dark:bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">How Ghost Cursor Works</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Our advanced AI analyzes your mouse movements, application context, and behavioral patterns to predict your next click with supernatural precision
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="text-center group">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-eye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Real-time Analysis</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            ShadowAI continuously monitors your mouse movements, cursor position, and screen elements to understand your intent
+                        </p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-brain text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Predictive Intelligence</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Advanced machine learning algorithms process patterns and predict the most likely click targets based on context
+                        </p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-route text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Visual Guidance</h3>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Subtle visual overlays show predicted click paths, helping you navigate interfaces faster and more efficiently
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Ghost Cursor Features</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-crosshairs text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Precision Targeting</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Highlights the most likely click targets with pixel-perfect accuracy</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-adjust text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Adaptive Opacity</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Visual overlays adjust transparency based on confidence levels</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-palette text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Customizable Themes</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Choose from multiple visual styles and color schemes</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-sliders-h text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Sensitivity Control</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Adjust prediction sensitivity to match your workflow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl p-8 border border-blue-200/50 dark:border-blue-700/50">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Visual Preview</h3>
+                        <div class="relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                </div>
+                                <div class="text-sm text-gray-500">Browser Window</div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4"></div>
+                                <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2"></div>
+                                <div class="relative">
+                                    <div class="h-8 bg-blue-100 dark:bg-blue-900/50 rounded border-2 border-blue-400 border-dashed flex items-center px-3">
+                                        <span class="text-sm text-blue-600 dark:text-blue-400">Predicted Click Target</span>
+                                    </div>
+                                    <div class="absolute -top-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
+                                        <i class="fas fa-mouse-pointer text-white text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details Section -->
+        <section class="py-20 bg-white/50 dark:bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Technical Implementation</h2>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50">
+                            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Machine Learning Models</h3>
+                            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Neural network-based prediction</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Real-time pattern recognition</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Contextual learning algorithms</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Adaptive behavior modeling</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-6 border border-gray-200/50 dark:border-gray-700/50">
+                            <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Performance Metrics</h3>
+                            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> <1ms prediction latency</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 95% accuracy rate</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Minimal CPU overhead</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Cross-platform compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Experience Ghost Cursor Today</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                        Ready to see the future of mouse interaction? Download ShadowAI and experience Ghost Cursor's predictive intelligence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="downloads.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Now
+                        </a>
+                        <a href="features.html" class="inline-flex items-center px-8 py-4 bg-white/80 dark:bg-gray-800/80 text-gray-900 dark:text-white font-semibold rounded-2xl hover:bg-white dark:hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-200 dark:border-gray-700">
+                            <i class="fas fa-list mr-2"></i>
+                            View All Features
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-ghost text-white text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">ShadowAI</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6 max-w-md">
+                        Experience the future of computer interaction with AI-powered assistance that anticipates your every move.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="features.html" class="hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="modes.html" class="hover:text-white transition-colors duration-300">Modes</a></li>
+                        <li><a href="downloads.html" class="hover:text-white transition-colors duration-300">Downloads</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Community</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Bug Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ShadowAI. All rights reserved. | Revolutionizing computer interaction with AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Particle animation
+        function createParticles() {
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach((particle, index) => {
+                const delay = index * 0.5;
+                const duration = 3 + Math.random() * 2;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+            });
+        }
+
+        createParticles();
+    </script>
+</body>
+</html>

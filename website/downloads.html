@@ -22,26 +22,313 @@
             </div>
         </nav>
     </header>
-    <main class="flex-grow container mx-auto p-8">
-        <h1 class="text-3xl font-extrabold mb-6 text-center glow">Download ShadowAI</h1>
-        <div class="text-center space-y-4 mb-8">
-            <a href="ShadowAI-Windows.exe" class="bg-blue-600 text-white px-8 py-3 rounded btn">ShadowAI-Windows.exe</a>
-            <a href="ShadowAI-Linux.bin" class="bg-green-600 text-white px-8 py-3 rounded btn">ShadowAI-Linux.bin</a>
-        </div>
-        <div class="mb-8 p-6 bg-white rounded shadow card-glow">
-            <h2 class="text-xl font-bold mb-2">System Requirements</h2>
-            <ul class="list-disc list-inside">
-                <li>64-bit Windows 10 or Ubuntu 22.04</li>
-                <li>Quad-core CPU</li>
-                <li>8 GB RAM</li>
-                <li>100 MB disk space</li>
-            </ul>
-        </div>
-        <div class="p-6 bg-white rounded shadow card-glow">
-            <h2 class="text-xl font-bold mb-2">SHA256 Verification</h2>
-            <p>Windows: <code>6e2f3a9e2c5d4a8f1bcf4b2e70c457b690f7f9c4a27f58fd0b1d6c23fa5777b9</code></p>
-            <p>Linux: <code>3b1c2e754cf3a1d2ac7615d1f0a2a71b5e487c9fabe1d094b6f9713f234dc2fd</code></p>
-        </div>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 lg:py-32 overflow-hidden">
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <div class="animate-fade-in-up">
+                    <div class="inline-flex items-center px-4 py-2 bg-green-100 dark:bg-green-900/30 rounded-full text-green-800 dark:text-green-300 text-sm font-medium mb-6">
+                        <i class="fas fa-download mr-2"></i>
+                        Ready to Download
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent glow-text">Download ShadowAI</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Get started with ShadowAI today. Choose your platform and begin your journey to intelligent automation.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                        <div class="flex items-center justify-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-shield-alt text-green-500"></i>
+                            <span>100% Free & Open Source</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-clock text-blue-500"></i>
+                            <span>5-minute setup</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
+                            <i class="fas fa-users text-purple-500"></i>
+                            <span>10,000+ users</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Options -->
+        <section class="py-20 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                    <!-- Windows -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
+                        <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
+                                    <i class="fab fa-windows text-white text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Windows</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                                        Compatible with Windows 10 and 11. Includes both installer and portable versions for maximum flexibility.
+                                    </p>
+                                    <div class="space-y-3 mb-6">
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                                            <span>Windows 10/11 compatible</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                                            <span>Installer & portable versions</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-blue-500 mr-3"></i>
+                                            <span>Auto-update support</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <button class="flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <i class="fas fa-download mr-2"></i>
+                                            Download (64-bit)
+                                        </button>
+                                        <button class="px-4 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- macOS -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-gray-400 to-gray-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
+                        <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-20 h-20 bg-gradient-to-br from-gray-500 to-gray-700 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
+                                    <i class="fab fa-apple text-white text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">macOS</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                                        Universal binary supporting both Intel and Apple Silicon Macs. Optimized for maximum performance on all Mac systems.
+                                    </p>
+                                    <div class="space-y-3 mb-6">
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-gray-500 mr-3"></i>
+                                            <span>Universal binary (Intel + Apple Silicon)</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-gray-500 mr-3"></i>
+                                            <span>macOS 11+ compatible</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-gray-500 mr-3"></i>
+                                            <span>Notarized & code signed</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <button class="flex-1 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <i class="fas fa-download mr-2"></i>
+                                            Download (.dmg)
+                                        </button>
+                                        <button class="px-4 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linux -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
+                        <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
+                                    <i class="fab fa-linux text-white text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Linux</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                                        AppImage format for maximum compatibility across distributions. No installation required, just download and run.
+                                    </p>
+                                    <div class="space-y-3 mb-6">
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                            <span>AppImage format (portable)</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                            <span>All major distributions</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                            <span>No installation required</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <button class="flex-1 px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-xl hover:from-orange-700 hover:to-red-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <i class="fas fa-download mr-2"></i>
+                                            Download (.AppImage)
+                                        </button>
+                                        <button class="px-4 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Source Code -->
+                    <div class="group relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
+                        <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-gray-200/50 dark:border-gray-700/50">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0">
+                                    <i class="fab fa-github text-white text-3xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Source Code</h3>
+                                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                                        Build from source or contribute to the project on GitHub. Join our community of developers and help shape the future.
+                                    </p>
+                                    <div class="space-y-3 mb-6">
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                                            <span>MIT License (fully open)</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                                            <span>Active development</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                                            <i class="fas fa-check-circle text-purple-500 mr-3"></i>
+                                            <span>Community contributions welcome</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <button class="flex-1 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
+                                            <i class="fab fa-github mr-2"></i>
+                                            View on GitHub
+                                        </button>
+                                        <button class="px-4 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300">
+                                            <i class="fas fa-star"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-white">System Requirements</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Ensure your system meets the minimum requirements for optimal performance</p>
+                </div>
+                
+                <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50/80 dark:bg-gray-700/80">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Platform</th>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Minimum Requirements</th>
+                                    <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Recommended</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200/50 dark:divide-gray-700/50">
+                                <tr>
+                                    <td class="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        <i class="fab fa-windows text-blue-500 mr-2"></i>
+                                        Windows
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        Windows 10 (64-bit)<br>
+                                        4GB RAM, 500MB storage
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        Windows 11 (64-bit)<br>
+                                        8GB RAM, 1GB storage
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-50/50 dark:bg-gray-700/20">
+                                    <td class="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        <i class="fab fa-apple text-gray-500 mr-2"></i>
+                                        macOS
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        macOS 11 Big Sur<br>
+                                        4GB RAM, 500MB storage
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        macOS 13 Ventura+<br>
+                                        8GB RAM, 1GB storage
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">
+                                        <i class="fab fa-linux text-orange-500 mr-2"></i>
+                                        Linux
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        Ubuntu 18.04+ or equivalent<br>
+                                        4GB RAM, 500MB storage
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
+                                        Ubuntu 22.04+ or equivalent<br>
+                                        8GB RAM, 1GB storage
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Guide -->
+        <section class="py-20 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-white">Quick Start Guide</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Get up and running with ShadowAI in just a few simple steps</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Download</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Choose your platform and download the appropriate version</p>
+                    </div>
+                    
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Install</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Run the installer or extract the portable version</p>
+                    </div>
+                    
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Start</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Launch ShadowAI and begin training your AI assistant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-gray-100 dark:bg-gray-800 text-center p-4">
         <p>Released under the MIT License. View on <a href="https://github.com/shadowai/dev" class="text-blue-600 dark:text-blue-400">GitHub</a>.</p>

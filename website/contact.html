@@ -22,21 +22,181 @@
             </div>
         </nav>
     </header>
-    <main class="flex-grow container mx-auto p-8">
-        <h1 class="text-3xl font-extrabold mb-6 text-center glow">Get in Touch</h1>
-        <form class="max-w-xl mx-auto space-y-4 p-6 bg-white rounded shadow card-glow" action="mailto:support@shadowai.dev" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Name" required class="w-full p-3 border rounded"/>
-            <input type="email" name="email" placeholder="Email" required class="w-full p-3 border rounded"/>
-            <textarea name="message" placeholder="Message" required class="w-full p-3 border rounded h-32"></textarea>
-            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded btn">Send</button>
-        </form>
-        <div class="text-center mt-8">
-            <a href="https://github.com/shadowai/dev/issues" class="text-blue-600">Report a bug</a>
-        </div>
-        <div class="flex justify-center space-x-4 mt-4">
-            <a href="https://github.com/shadowai/dev" class="text-gray-700">GitHub</a>
-            <a href="https://twitter.com/shadowai" class="text-gray-700">Twitter</a>
-        </div>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 lg:py-32 overflow-hidden">
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <div class="animate-fade-in-up">
+                    <div class="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-800 dark:text-blue-300 text-sm font-medium mb-6">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Let's Connect
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent glow-text">Get in Touch</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Have questions, feedback, or need support? We're here to help you make the most of ShadowAI.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="py-20 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-3xl blur opacity-20"></div>
+                        <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-paper-plane text-white text-lg"></i>
+                                </div>
+                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Send us a Message</h2>
+                            </div>
+                            <form class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">First Name</label>
+                                        <input type="text" placeholder="John" class="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
+                                        <input type="text" placeholder="Doe" class="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                                    <input type="email" placeholder="john.doe@example.com" class="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                                    <select class="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                                        <option>General Inquiry</option>
+                                        <option>Technical Support</option>
+                                        <option>Feature Request</option>
+                                        <option>Bug Report</option>
+                                        <option>Partnership</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                                    <textarea placeholder="Tell us how we can help you..." rows="6" class="w-full p-4 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center space-x-2">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Send Message</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="space-y-8">
+                        <!-- Quick Contact -->
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 rounded-3xl blur opacity-20"></div>
+                            <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                                <div class="flex items-center space-x-3 mb-6">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-headset text-white text-lg"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Quick Contact</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                        <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-envelope text-blue-600 dark:text-blue-400"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 dark:text-white">Email Support</div>
+                                            <div class="text-sm text-gray-600 dark:text-gray-300">support@shadowai.dev</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/50 rounded-lg flex items-center justify-center">
+                                            <i class="fab fa-discord text-purple-600 dark:text-purple-400"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 dark:text-white">Discord Community</div>
+                                            <div class="text-sm text-gray-600 dark:text-gray-300">Join our server</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                        <div class="w-10 h-10 bg-gray-100 dark:bg-gray-900/50 rounded-lg flex items-center justify-center">
+                                            <i class="fab fa-github text-gray-600 dark:text-gray-400"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 dark:text-white">GitHub Issues</div>
+                                            <div class="text-sm text-gray-600 dark:text-gray-300">github.com/shadowai/dev</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-400 to-pink-500 rounded-3xl blur opacity-20"></div>
+                            <div class="relative p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50">
+                                <div class="flex items-center space-x-3 mb-6">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-pink-600 rounded-xl flex items-center justify-center">
+                                        <i class="fas fa-question-circle text-white text-lg"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Quick Answers</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                        <div class="font-medium text-gray-900 dark:text-white mb-2">How do I get started?</div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-300">Download ShadowAI, run the installer, and follow the setup wizard.</div>
+                                    </div>
+                                    <div class="border-b border-gray-200 dark:border-gray-700 pb-4">
+                                        <div class="font-medium text-gray-900 dark:text-white mb-2">Is ShadowAI free?</div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-300">Yes! ShadowAI is completely free and open source under MIT license.</div>
+                                    </div>
+                                    <div>
+                                        <div class="font-medium text-gray-900 dark:text-white mb-2">What platforms are supported?</div>
+                                        <div class="text-sm text-gray-600 dark:text-gray-300">Windows, macOS, and Linux are all fully supported.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Time -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-3xl p-12 border border-blue-200/50 dark:border-blue-700/50">
+                    <div class="flex items-center justify-center space-x-3 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white">We're Here to Help</h2>
+                    </div>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Our team typically responds to inquiries within 24 hours. For urgent technical issues, join our Discord community for faster support.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">< 24h</div>
+                            <div class="text-gray-600 dark:text-gray-300">Email Response</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">< 1h</div>
+                            <div class="text-gray-600 dark:text-gray-300">Discord Support</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">24/7</div>
+                            <div class="text-gray-600 dark:text-gray-300">Community Help</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-gray-100 dark:bg-gray-800 text-center p-4">
         <p>Released under the MIT License. View on <a href="https://github.com/shadowai/dev" class="text-blue-600 dark:text-blue-400">GitHub</a>.</p>
