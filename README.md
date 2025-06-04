@@ -17,13 +17,13 @@ Master your workflow with real-time automation and AI mimicry.
 
 ## Usage
 
-1. Download the latest release for your platform and run the `shadowai` executable or Python script.
-2. ShadowAI starts in MIMIC Mode by default. Switch modes from the command line or system tray menu.
-3. Press the configured hotkey to pause tracking or choose "Exit" from the menu to close the assistant.
+1. From the `shadowai` folder run `npm install` to set up dependencies.
+2. Launch the assistant with `npm start`.
+3. Use the on-screen buttons to train, mimic, and replay actions.
 
 ## Performance & Tech Stack
 
-- Built with Python and C++ for cross-platform compatibility and speed.
+- Built with Electron for cross-platform compatibility and speed.
 - Optimized for a control loop under 30 milliseconds to maintain seamless interaction.
 - Trains models locally using available CPU or GPU resources with no external data transfer.
 

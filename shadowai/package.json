@@ -1,0 +1,18 @@
+{
+  "name": "shadowai",
+  "version": "1.0.0",
+  "description": "Local automation assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . ShadowAI --platform=win32,linux --arch=x64 --overwrite"
+  },
+  "dependencies": {
+    "electron": "26.3.0",
+    "iohook": "0.9.3",
+    "robotjs": "0.6.0"
+  },
+  "devDependencies": {
+    "electron-packager": "17.1.1"
+  }
+}
